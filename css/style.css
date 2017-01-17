@@ -38,6 +38,7 @@
 }
 .nav li a:hover{
     background-color: rgba(255, 102, 51,0.5);
+    text-shadow: 2px 2px #ff0000;
 }
 .main-head-h1{
     color: beige;
