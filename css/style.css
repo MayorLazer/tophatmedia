@@ -20,22 +20,19 @@
   position: fixed;
   width: 100%;
   z-index: 99999;
-  transition: all ease .5s;
+
 }
 #nav.shrink {
   height: 100px;
-  transition: all ease .5s;
   background: rgba(0,0,0,0.7);
- 
+  width: 100%;
 }
 #nav.shrink #logo {
   padding: 10px;
-  transition: all ease .5s;
 }
 .nav li a{
-    margin: 1rem;
     color: white;
-    font-size: 13px;
+
     font-weight: bold;
 }
 .nav li a:hover{
