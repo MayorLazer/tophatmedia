@@ -11,7 +11,7 @@
 
     <link href="fonts/roboto/Roboto-Light.ttf">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/card.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
@@ -26,11 +26,11 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#about">Historia</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#gallery">Galeria</a></li>
-                <li><a href="#contact">Contactenos</a></li>
+                <li class="hvr-hang"><a href="#about">Historia</a></li>
+                <li class="hvr-hang"><a href="#services">Servicios</a></li>
+                <li class="hvr-hang"><a href="#portfolio">Portfolio</a></li>
+                <li class="hvr-hang"><a href="#gallery">Galeria</a></li>
+                <li class="hvr-hang"><a href="#contact">Contactenos</a></li>
             </ul>
         </div>
     </nav>
@@ -225,10 +225,6 @@
                         window.location.hash = hash;
                     });
             });
-            $(".nav li a").hover(
-                function(){$(this).addClass("animate pulse infinite")}
-
-            )
             //Achique delnav
             $(window).scroll(function() {
                 if($(document).scrollTop() > 10) {
