@@ -5,8 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="icon" type="image/png"  href="http://example.com/myicon.png">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="http://eg.com/favicon.png"/>
+
     <link href="fonts/roboto/Roboto-Light.ttf">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/card.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
@@ -56,7 +61,7 @@
                             </div>
                             <div class="desc">Recursos Gráficos</div>
                             <div class="desc">Edición</div>
-                            <div class="desc">Estudiante Diseño Digital</div>
+                            <div class="desc">Diseño Digital</div>
                         </div>
                         <div class="bottom">
                             <a target="_blank" class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/santidescalzohs">
@@ -85,7 +90,7 @@
                             </div>
                             <div class="desc">Programador</div>
                             <div class="desc">Diseño de Páginas Web</div>
-                            <div class="desc">Estudiante Ing Informática</div>
+                            <div class="desc">Analisis Informático</div>
                         </div>
                         <div class="bottom">
                             <a target="_blank" class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/bizcochoasesino">
@@ -114,7 +119,7 @@
                             </div>
                             <div class="desc">Decoradora de Interiores</div>
                             <div class="desc">Fotógrafa</div>
-                            <div class="desc">Estudiante Fotografía</div>
+                            <div class="desc"></div>
                         </div>
                         <div class="bottom">
                             <a class="btn btn-warning btn-instagram btn-sm" href="https://instagram.com/ailucampi" target="_blank">
@@ -180,7 +185,7 @@
                     <div class="logo">
                     <!-- Replace Your logo and remove text  -->
                     <!-- <img src="images/logo.png" class="img-responsive center-block"> -->
-                    <h2 class="demo-logo">Top<strong>Hat</strong>Media</h2>
+                    <h2 class="demo-logo">&gt;_Top<strong>Hat</strong>Media</h2>
                     </div>
                     <div class="social-media">
                         <ul class="list-inline">
@@ -220,6 +225,10 @@
                         window.location.hash = hash;
                     });
             });
+            $(".nav li a").hover(
+                function(){$(this).addClass("animate pulse infinite")}
+
+            )
             //Achique delnav
             $(window).scroll(function() {
                 if($(document).scrollTop() > 10) {
