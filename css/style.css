@@ -8,7 +8,8 @@
     overflow: visible;
     background: beige url("/media/loader.gif") no-repeat center center;
 }
-#logo { 
+#logo {
+  height: 8em;
   color: #fff;
   padding: 20px 0px 0px 0px;
   transition: all ease .5s;
@@ -32,12 +33,10 @@
 }
 .nav li a{
     color: white;
-
     font-weight: bold;
 }
 .nav li a:hover{
     background-color: rgba(230, 126, 34,0.2);
-    border: 1px solid beige;
 }
 .main-head-h1{
     color: beige;
