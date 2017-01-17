@@ -37,7 +37,7 @@
     font-weight: bold;
 }
 .nav li a:hover{
-    background-color: rgba(230, 126, 34,0.2);
+    background-color: rgba(255, 102, 51,0.5);
 }
 .main-head-h1{
     color: beige;
@@ -48,7 +48,7 @@
     background-image: url("/media/fondo/fondopro.jpg");
     background-size: cover;
     -webkit-background-size: cover;
-    padding: 260px 45px;
+    padding: 250px 45px;
 }
 .portfolio-btn{
     background-color: transparent;
@@ -86,7 +86,7 @@
     background-image: url("/media/fondo/enfoque.jpg");
     background-size: cover;
     -webkit-background-size: cover;
-    padding: 100px 45px 500px 45px;
+    padding: 100px 45px 200px 45px;
 }
 .container-portfolio{
     background-color: #2980b9;
