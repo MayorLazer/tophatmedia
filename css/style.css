@@ -12,7 +12,7 @@
     font-family: Gotham;
     src: url(/fonts/GothamRounded-Light.otf);
 }
-strong{
+p strong{
     color: coral;
     font-style: italic;
 }
@@ -128,7 +128,7 @@ video {
     .main-header{
         background-image: url(/media/fondo/fondopro.jpg)
     }
+    .container-text{
+        height: 100%;
+    }
 }
-
-
-
