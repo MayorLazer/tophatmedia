@@ -97,7 +97,9 @@
 }
 .container-contact{}
 .container-text{
-    display: block;
     height: 10em;
     background-color: rgba(0,0,0,0.4);
+}
+strong{
+    color: rgb(255, 102, 51);
 }
