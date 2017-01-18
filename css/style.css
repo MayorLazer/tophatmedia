@@ -95,18 +95,35 @@
 .container-gallery{
     background-color: #e67e22;
 }
+.container-text{
+    height: 10em;
+    padding: 0.09px 10px;
+    background-color: rgba(0,0,0,0.4);
+}
 video {
     position: fixed;
     top: 50%;
-    left: 50%;
     min-width: 100%;
     min-height: 100%;
     width: 100%;
-    height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
   background-size: cover;
   transition: 1s opacity;
 }
+@media only screen and (max-width: 640px)  {
+    video {
+
+    top: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-71%);
+    background-size: cover;
+    transition: 1s opacity;
+    }
+}
+
 
 .container-contact{}
