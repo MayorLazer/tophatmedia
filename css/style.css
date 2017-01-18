@@ -124,9 +124,10 @@ video {
   background-size: cover;
   transition: 1s opacity;
 }
-@media only screen and (max-width: 480px)  {
+@media only screen and (max-width: 1045px)  {
     .main-header{
         background-color: rgba(17,17,17,1);
+        background-image: url(/media/fondo/fondopro.jpg)
     }
 }
 
