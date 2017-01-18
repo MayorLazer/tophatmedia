@@ -8,6 +8,10 @@
     overflow: visible;
     background: beige url("/media/loader.gif") no-repeat center center;
 }
+@font-face {
+    font-family: GothamRounded-Light;
+    src: url(/fonts/gotham_rounded/GothamRounded-Light.otf);
+}
 #logo {
   height: 8em;
   color: #fff;
@@ -98,8 +102,12 @@
 .container-contact{}
 .container-text{
     height: 10em;
+    padding: 0.09px 10px;
     background-color: rgba(0,0,0,0.4);
 }
 strong{
     color: rgb(255, 102, 51);
+}
+p{
+    font-family :GothamRounded-Light;
 }
