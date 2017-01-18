@@ -3,37 +3,45 @@
 <head>
     <title>Top Hat Media</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="icon" type="image/png"  src="favicon.png">
     <link href="fonts/roboto/Roboto-Light.ttf">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/card.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body id="mypage" data-content=".navbar">
     <div id="preloader"></div>
 <!--######### NAVBAR ############################# -->
     <nav id="nav">
         <div class="navbar-header">
-            <a href="index.html"><img id="logo" width="250" height="150"  src="media/tophat.png" alt="Top Hat Media"></a>
+            <a href="index.html"><img id="logo" src="media/tophat.png" alt="Top Hat Media"></a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#about">Historia</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#gallery">Galeria</a></li>
-                <li><a href="#contact">Contactenos</a></li>
+                <li class="hvr-hang"><a href="#about">Historia</a></li>
+                <li class="hvr-hang"><a href="#services">Servicios</a></li>
+                <li class="hvr-hang"><a href="#portfolio">Portfolio</a></li>
+                <li class="hvr-hang"><a href="#gallery">Galeria</a></li>
+                <li class="hvr-hang"><a href="#contact">Contactenos</a></li>
             </ul>
         </div>
     </nav>
 <!--############# HERO ######################## -->
     <section class="main-header text-center">
+        <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+            <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same   way  created by pressing the "Pause" button  -->
+            <source src="/media/fondomp4.mp4" type="video/mp4">
+            <source src="/media/fondowebm.webm" type="video/webm">
+        </video>
         <h1 class="main-head-h1">Creamos una huella digital para tu negocio</h1>
         <p style="color: white; font-size:14px;" class="animated bounceInDown">Apunte la dirección nosotros haremos el resto</p>
         <a href="#portfolio"><button class="portfolio-btn">Portfolio</button></a>
-        <a href="#contact"><button class="contact-btn">Ponte en Contacto</button></a>
+        <a href="#contact"><button class="contact-btn">Contáctate</button></a>
     </section>
 <!--############# CONTENT ######################## -->
     <!-- AboutUs -->
@@ -55,13 +63,13 @@
                             </div>
                             <div class="desc">Recursos Gráficos</div>
                             <div class="desc">Edición</div>
-                            <div class="desc">Youtuber (?</div>
+                            <div class="desc">Diseño Digital</div>
                         </div>
                         <div class="bottom">
-                            <a target="_blank" class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/santidescalzoh">
+                            <a target="_blank" class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/santidescalzohs">
                                 <i class="fa fa-twitter"></i>
                             </a>
-                            <a target="_blank" class="btn btn-danger btn-sm" rel="publisher" href="https://plus.google.com/">
+                            <a target="_blank" class="btn btn-danger btn-sm" rel="publisher" href="https://plus.google.com/109478278421625769843">
                                 <i class="fa fa-google-plus"></i>
                             </a>
                             <a target="_blank" class="btn btn-primary btn-sm" rel="publisher" href="https://facebook.com/santiago.descalzo">
@@ -84,7 +92,7 @@
                             </div>
                             <div class="desc">Programador</div>
                             <div class="desc">Diseño de Páginas Web</div>
-                            <div class="desc">Guitarrista de tiempo libre</div>
+                            <div class="desc">Analisis Informático</div>
                         </div>
                         <div class="bottom">
                             <a target="_blank" class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/bizcochoasesino">
@@ -93,7 +101,7 @@
                             <a target="_blank" class="btn btn-danger btn-sm" rel="publisher" ref="https://plus.google.com/108977052379490512475">
                                 <i class="fa fa-google-plus"></i>
                             </a>
-                            <a target="_blank" class="btn btn-primary btn-sm" rel="publisher" href="https://facebook.com/sebas.martorell" >
+                            <a target="_blank" class="btn btn-primary btn-sm" rel="publisher" href="https://instagram.com/sebas.martorell" >
                                 <i class="fa fa-facebook"></i>
                             </a>
                         </div>
@@ -112,12 +120,12 @@
                                 <a target="_blank" href="http://scripteden.com/" target="_blank">Ailén Campi</a>
                             </div>
                             <div class="desc">Decoradora de Interiores</div>
-                            <div class="desc">Fotógrafa</div>
-                            <div class="desc">Amante de los gatos</div>
+                            <div class="desc">Operadora de camaras</div>
+                            <div class="desc">Fotografía</div>
                         </div>
                         <div class="bottom">
-                            <a class="btn btn-primary btn-twitter btn-sm" href="https://" target="_blank">
-                                <i class="fa fa-twitter"></i>
+                            <a class="btn btn-warning btn-instagram btn-sm" href="https://instagram.com/ailucampi" target="_blank">
+                                <i class="fa fa-instagram"></i>
                             </a>
                             <a class="btn btn-danger btn-sm" rel="publisher" href="https://plus.google.com/118223084942594959288" target="_blank">
                                 <i class="fa fa-google-plus"></i>
@@ -134,24 +142,30 @@
     </section>
     <!-- Services -->
     <section id="services" class="container-services">
-        <h1 class="heading-services text-center" style="color:white;"> Nuestros servicios </h1>
+        <h1 class="heading-services text-center" style="color:coral;"> Nuestros servicios </h1>
         <div class="container">
             <div class="row text-center" style="color: white;">
                 <div class="col-lg-4 col-sm-6">
-                    <h3>Paginas web</h3>
-                    <p>Creamos una landing page para tu negocio en días asi 
-                    podras tener el look profesional que siempre quisiste</p>
+                    <div class="container-text text-center">
+                        <h3>Paginas web</h3>
+                        <p>Creamos una <strong>landing page</strong> para tu negocio en días asi
+                        podras tener el <strong>look profesional</strong> que siempre quisiste</p>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <h3>Perfiles digitales</h3>
-                    <p>Nos encargamos de que tengas un perfil activo en todas las redes
-                    sociales actuales; Facebook G+ Youtube Instagram o cualquier otra red
-                    que sea pertinente al rubro de su negocio</p>
+                    <div class="container-text text-center">
+                        <h3>Perfiles digitales</h3>
+                        <p>Nos encargamos de que tengas un <strong>perfil activo</strong> en todas las redes
+                        sociales actuales; Facebook G+ Youtube Instagram o cualquier otra red
+                        que sea pertinente al rubro de su negocio</p>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-sm-6r">
-                    <h3>Diseño Gráfico</h3>
-                    <p>Desde la creación de un logotipo hasta la redacción de folletos
-                    Lo que necesites para difundir tu negocio en cualquier parte del globo</p>
+                    <div class="container-text text-center">
+                       <h3>Diseño Gráfico</h3>
+                        <p>Desde la creación de un logotipo hasta la redacción de folletos
+                        Lo que necesites para <strong>difundir tu negocio </strong> en cualquier parte del globo</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -179,20 +193,20 @@
                     <div class="logo">
                     <!-- Replace Your logo and remove text  -->
                     <!-- <img src="images/logo.png" class="img-responsive center-block"> -->
-                    <h2 class="demo-logo">Top<strong>Hat</strong>Media</h2>
+                    <h2 class="demo-logo">&gt;_Top<strong>Hat</strong>Media</h2>
                     </div>
                     <div class="social-media">
                         <ul class="list-inline">
-                            <li><a href=""><i class="fa fa-facebook-official"></i></a></li>
-                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="https://facebook.com/tophatmediasantafe" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
+                            <li><a href="https://twitter.com/tophatmediastf" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://plus.google.com/u/0/112927532059461825134" target="_blank"><i class="fa fa-google-plus"></i></a></li>
                             <li><a href=""><i class="fa fa-pinterest"></i></a></li>
                             <li><a href=""><i class="fa fa-youtube-play"></i></a></li>
                         </ul>
                     </div>
 
                     <div class="copyright">
-                    <p>Copyright &copy; 2017 Hecho con <3.</p>
+                    <p>Copyright &copy; 2017 Hecho con  &lt;3 </p>
                     </div>
                 </div>
             </div>
@@ -211,7 +225,7 @@
               $("#preloader").fadeOut("slow",function(){$(this).remove();});           
             });
             //Desplazamiento del nav
-            $(".navbar a").on("click",function(event){
+            $(".nav a").on("click",function(event){
                 var hash = this.hash;
                     $("html, body").animate({
                         scrollTop: $(hash).offset().top
