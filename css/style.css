@@ -1,3 +1,13 @@
+.icon{
+    display: inline-block;
+    background-color: lightgray;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px dashed black;
+    border-radius: 10px
+}
 #preloader{
     position:fixed;
     left: 0;
@@ -7,6 +17,14 @@
     height: 100%;
     overflow: visible;
     background: beige url("/media/loader.gif") no-repeat center center;
+}
+@font-face{
+    font-family: Gotham;
+    src: url(/fonts/GothamRounded-Light.otf);
+}
+p strong{
+    color: coral;
+    font-style: italic;
 }
 #logo {
   height: 8em;
@@ -79,26 +97,30 @@
     padding: 8px 25px;
     margin-left: 10px;
 }
-.container-about{
+.about-container{
     background-color: #bdc3c7;
 }
-.container-services{
-    background-color: #9b59b6;
-    background-image: url("/media/fondo/enfoque.jpg");
+.services-container{
+    background-color: #bdc3c7;
+    background-image: url("/media/fondo/OTOTNEVERMUCHLOVEWHENWEGOOT.png");
+    background-position: center;
     background-size: cover;
     -webkit-background-size: cover;
-    padding: 100px 45px 200px 45px;
+    padding: 40px 45px 100px 45px;
 }
-.container-portfolio{
-    background-color: #2980b9;
-}
-.container-gallery{
+.portfolio-container{
     background-color: #e67e22;
+    margin-top: -1.5em;
+    margin-bottom: -1.5em;
 }
-.container-text{
+.text-container{
     height: 10em;
     padding: 0.09px 10px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.5);
+    font-family: Gotham;
+}
+.contact-container{
+    background-color: beige;
 }
 video {
     position: fixed;
@@ -111,19 +133,11 @@ video {
   background-size: cover;
   transition: 1s opacity;
 }
-@media only screen and (max-width: 640px)  {
-    video {
-
-    top: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: 100%;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-71%);
-    background-size: cover;
-    transition: 1s opacity;
+@media only screen and (max-width: 1045px)  {
+    .main-header{
+        background-image: url(/media/fondo/fondopro.jpg)
+    }
+    .text-container{
+        height: 100%;
     }
 }
-
-
-.container-contact{}
