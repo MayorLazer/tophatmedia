@@ -20,8 +20,8 @@
     <link href="css/hover.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/card.css" rel="stylesheet">
-    <link href="css/contact.css" rel="stylesheet">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
+    <link href="css/contact.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet"><!--  End of Links -->
 </head>
 <body id="mypage" data-content=".navbar">
@@ -244,28 +244,35 @@
         <!-- ContactUs -->
         <header id="contact" class="contact-container">
             <h2 class="contact-heading text-center" style="font-size: 35; paddgin:10px;">Contacto</h2>
-            <div id="form-main">
-              <div id="form-div">
-                <form class="form" id="form1">
-
-                  <p class="name">
-                    <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
-                  </p>
-
-                  <p class="email">
-                    <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
-                  </p>
-
-                  <p class="text">
-                    <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
-                  </p>
-
-                  <div class="submit">
-                    <input type="submit" value="SEND" id="button-blue"/>
-                    <div class="ease"></div>
-                  </div>
-                </form>
-              </div>
+            <div class="container">
+                <div class="row">
+                    <form role="form" id="contact-form" class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Nombre y Apellido">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail">
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Esperamos tu consulta: &#10;Ya sea por nuestras tarifas, o si te intriga el noveno dígito de pi. Sea cual sea... estaremos para responderte;&#10;┌─┐&#10;┴─┴&#10;ಠ_ರೃ -TopHatMedia"></textarea>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn main-btn pull-right">Send a message</button>
+                                    </div>
+                                </div>
+                    </form>
+                </div>
             </div>
         </header><!--  End Contact -->
     </section> <!-- End of Main -->
@@ -333,6 +340,42 @@
                     $('#nav').removeClass('shrink');
                 }
             });
+            $('#contact-form').bootstrapValidator({
+        //        live: 'disabled',
+                message: 'This value is not valid',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    Name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'No seas tímido, no hay forma que tu nombre sea tan horrendo.'
+                            }
+                        }
+                    },
+                    email: {
+                        validators: {
+                            notEmpty: {
+                                message: 'No tengas miedo en dejar tu mail. No lo usaremos para spam, prometido!'
+                            },
+                            emailAddress: {
+                                message: 'Voy a estar aquí hasta que introduzcas un mail completo.'
+                            }
+                        }
+                    },
+                    Message: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Consultanos lo que quieras: Nuestras tarifas, o cuál es el noveno dígito de pi.'
+                            }
+                        }
+                    }
+                }
+            });
+
         });
     </script><!--  End Scripts -->
 </body>
