@@ -87,32 +87,29 @@ p strong{
     padding: 8px 25px;
     margin-left: 10px;
 }
-.container-about{
+.about-container{
     background-color: #bdc3c7;
 }
-.container-services{
+.services-container{
     background-color: #9b59b6;
     background-image: url("/media/fondo/OTOTNEVERMUCHLOVEWHENWEGOOT.png");
     background-position: center;
     background-size: cover;
     -webkit-background-size: cover;
-    padding: 100px 45px 200px 45px;
+    padding: 40px 45px 100px 45px;
 }
-.container-portfolio{
-    background-color: #2980b9;
-}
-.container-gallery{
+.portfolio-container{
     background-color: #e67e22;
     margin-top: -1.5em;
     margin-bottom: -1.5em;
 }
-.container-text{
+.text-container{
     height: 10em;
     padding: 0.09px 10px;
     background-color: rgba(0,0,0,0.5);
     font-family: Gotham;
 }
-.container-contact{}
+.contact-container{}
 video {
     position: fixed;
     top: 50%;
@@ -128,7 +125,7 @@ video {
     .main-header{
         background-image: url(/media/fondo/fondopro.jpg)
     }
-    .container-text{
+    .text-container{
         height: 100%;
     }
 }

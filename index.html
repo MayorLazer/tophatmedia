@@ -62,9 +62,9 @@
 <!-- ////////////////Main////////////////// -->
     <section role="main">
         <!-- AboutUs -->
-        <article id="about" class="container-about">
+        <article id="about" class="about-container">
             <div class="container">
-                <h1 style="font-size:35px; padding:50px; color:coral;" class="about-heading text-center">Sobre Nosotros</h1>
+                <h2 style="font-size:35px; padding:50px; color:coral;" class="about-heading text-center">Sobre Nosotros</h2>
                 <p class="text-center">Somos un <strong>grupo especializado</strong> en la creacion, diseño y desarrollo de plataformas multimediales, <br>conformado por alumnos universitarios y profesionales de la ciudad de <strong>Santa Fe.</strong></p>
                 <div id="cards" class="row center">
                     <div id="Santi" class="col-lg-3 col-sm-6">
@@ -190,19 +190,19 @@
             </div>
         </article><!--  End AboutUs -->
         <!-- Services -->
-        <article id="services" class="container-services">
-            <h1 class="heading-services text-center" style="color:coral;"> Nuestros servicios </h1>
+        <article id="services" class="services-container">
+            <h2 class="services-heading text-center" style="font-size:35px; padding:20px; color:coral;"> Nuestros servicios </h2>
             <div class="container">
                 <div class="row text-center" style="color: white;">
                     <div class="col-lg-4 col-sm-12">
-                        <div class="container-text">
+                        <div class="text-container">
                             <h3>Paginas web</h3>
                             <p>Creamos una <strong>landing page</strong> para tu negocio en días asi
                             podras tener el <strong>look profesional</strong> que siempre quisiste</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-12">
-                        <div class="container-text">
+                        <div class="text-container">
                             <h3>Perfiles digitales</h3>
                             <p>Nos encargamos de que tengas un <strong>perfil activo</strong> en todas las redes
                             sociales actuales; Facebook G+ Youtube Instagram o cualquier otra red
@@ -210,7 +210,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-12">
-                        <div class="container-text">
+                        <div class="text-container">
                            <h3>Diseño Gráfico</h3>
                             <p>Desde la creación de un logotipo hasta la redacción de folletos
                             Lo que necesites para <strong>difundir tu negocio </strong> en cualquier parte del globo</p>
@@ -219,7 +219,7 @@
                         <div class="col-lg-4 col-sm-12">
                         </div>
                     <div class="col-lg-4 col-sm-12">
-                        <div class="container-text">
+                        <div class="text-container-">
                            <h3>Optimizacion para Google</h3>
                             <p>El 95% de los usuarios no busca mas halla <strong>de la primer pagina de busqueda en Google</strong> por eso, nosotros nos aseguramos de que estes en los primeros resultados.</p>
                         </div>
@@ -230,16 +230,18 @@
                 </div>
             </div>
         </article><!--  End Services -->
-        <!-- Gallery -->
-        <article id="gallery" class="container-gallery">
-            <h1 class="heading-gallery"></h1>
+        <!-- portfolio-->
+        <article id="portfolio" class="portfolio-container">
+            <h2 class="portfolio-heading text-center" style="font-size: 35; paddgin:10px;">Todavía no tenemos trabajos para mostrar <br><code>:(</code></h2>
             <div class="container text-center">
-                <h2>Todavía no tenemos trabajos para mostrar <br><br><code>:(</code></h2>
+                <p>Vuela Pronto estamos siempre en desarollo!</p>
             </div>
-        </article><!--  End Gallery -->
+        </article><!--  End Portfolio-->
+        <!-- gallery -->
+        <article id="gallery" class="gallery-container"></article><!-- End Gallery -->
         <!-- ContactUs -->
-        <article id="contact" class="container-contact">
-            <h1 class="heading-contact"></h1>
+        <article id="contact" class="contact-container">
+            <h2 class="contact-heading"></h2>
             <div class="container">
             </div>
         </article><!--  End Contact -->
@@ -289,7 +291,7 @@
               $("#preloader").fadeOut("slow",function(){$(this).remove();});
             });
             //Desplazamiento del nav
-            $(".nav a").on("click",function(event){
+            $(".nav a", ".portfolio-btn", ".contact-btn").on("click",function(event){
                 var hash = this.hash;
                     $("html, body").animate({
                         scrollTop: $(hash).offset().top
