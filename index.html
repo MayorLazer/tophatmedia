@@ -49,7 +49,7 @@
 
 <!-- ////////////////Hero////////////////// -->
     <section class="main-header text-center">
-        <video poster="http://i.imgur.com/H7GMGKQ.jpg" id="bgvid" playsinline autoplay muted loop>
+        <video playsinline autoplay muted loop>
             <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same   way  created by pressing the "Pause" button  -->
             <source src="/media/fondomp4.mp4" type="video/mp4">
             <source src="/media/fondowebm.webm" type="video/webm">
@@ -66,8 +66,11 @@
         <!-- AboutUs -->
         <header id="about" class="about-container">
             <div class="container">
-                <h2 style="font-size:35px; padding:50px; color:coral;" class="about-heading text-center">Sobre Nosotros</h2>
-                <p class="text-center">Somos un <strong>grupo especializado</strong> en la creacion, diseño y desarrollo de plataformas multimediales, <br>conformado por alumnos universitarios y profesionales de la ciudad de <strong>Santa Fe.</strong></p>
+                <div class="box">
+                    <h2 style="font-size:35px; color:white;" class="about-heading text-center">Sobre Nosotros</h2>
+                    <p class="text-center">Somos un <strong style="color:white">grupo especializado</strong> en la creacion, diseño y desarrollo de plataformas multimediales, <br>conformado por alumnos universitarios y profesionales de la ciudad de <strong style="color:white">Santa Fe.</strong></p>
+                </div>
+
                 <div id="cards" class="row center">
                     <div id="Santi" class="col-lg-3 col-sm-6">
 
@@ -233,7 +236,7 @@
 
         <!-- portfolio-->
         <header id="portfolio" class="portfolio-container">
-            <h2 class="portfolio-heading text-center" style="font-size: 35; paddgin:10px;">Todavía no tenemos trabajos para mostrar <br><code>:(</code></h2>
+            <h2 class="portfolio-heading text-center" style="font-size: 35px;">Todavía no tenemos trabajos para mostrar <br><code>:(</code></h2>
             <div class="container text-center">
                 <p>Vuelva Pronto estamos siempre en desarollo!</p>
             </div>
@@ -243,7 +246,7 @@
         <header id="gallery" class="gallery-container"></header><!-- End Gallery -->
         <!-- ContactUs -->
         <header id="contact" class="contact-container">
-            <h2 class="contact-heading text-center" style="font-size: 35; paddgin:10px;">Contacto</h2>
+            <h2 class="contact-heading text-center" style="font-size: 35px; padding:20px;">Contacto</h2>
             <div class="container">
                 <div class="row">
                     <form role="form" id="contact-form" class="contact-form">
