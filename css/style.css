@@ -1,3 +1,13 @@
+.icon{
+    display: inline-block;
+    background-color: lightgray;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px dashed black;
+    border-radius: 10px
+}
 #preloader{
     position:fixed;
     left: 0;
@@ -91,7 +101,7 @@ p strong{
     background-color: #bdc3c7;
 }
 .services-container{
-    background-color: #9b59b6;
+    background-color: #bdc3c7;
     background-image: url("/media/fondo/OTOTNEVERMUCHLOVEWHENWEGOOT.png");
     background-position: center;
     background-size: cover;
